@@ -2,6 +2,15 @@
 
 import Link from "@/node_modules/next/link";
 import { useState } from "react";
+import wall5 from '../public/wall5.jpg';
+import profName from '../public/name.png';
+import phone from '../public/phone.png';
+import linkedin from '../public/linkedin.png';
+import github from '../public/github.png';
+import typing from '../public/typing.png';
+import address from '../public/address.png';
+import profEmail from '../public/email.png';
+import Image from "@/node_modules/next/image";
 
 export default function Contact() {
 
@@ -62,42 +71,42 @@ export default function Contact() {
                         </button>
                     </form>
 
-                    <div className="bg-[url('/public/wall5.jpg')] bg-cover bg-center w-2/6 sm:w-full sm:h-80 h-40 rounded-lg mx-16 p-5 flex flex-row justify-between mt-3">
+                    <div className="bg-cover bg-center w-2/6 sm:w-full sm:h-80 h-40 rounded-lg mx-16 p-5 flex flex-row justify-between mt-3" style={{ backgroundImage: `url(${wall5.src})` }} >
                         <div className="flex flex-col justify-between">
                             <div className="flex flex-row items-center gap-3">
-                                <img src="/public/name.png" alt="name" className="w-10 h-10" />
+                                <Image src={profName} alt="name" className="w-10 h-10" />
                                 <label className="text-lg text-neutral-300">Bilal Hamza</label>
                             </div>
 
                             <div className="flex flex-row items-center gap-3">
-                                <img src="/public/phone.png" alt="phone" className="w-10 h-10" />
+                                <Image src={phone} alt="phone" className="w-10 h-10" />
                                 <label className="text-lg text-neutral-300">+94 77 388 8721</label>
                             </div>
 
                             <div className="flex flex-row items-center gap-3">
-                                <img src="/public/linkedin.png" alt="linkedin" className="w-10 h-10" />
+                                <Image src={linkedin} alt="linkedin" className="w-10 h-10" />
                                 <Link href="https://linkedin.com/in/bilalhamza7/" target="_blank" className="text-lg text-neutral-300 hover:underline">linkedin Profile</Link>
                             </div>
 
                             <div className="flex flex-row items-center gap-3">
-                                <img src="/public/github.png" alt="github" className="w-10 h-10" />
+                                <Image src={github} alt="github" className="w-10 h-10" />
                                 <Link href="https://github.com/BilalHamza7" target="_blank" className="text-lg text-neutral-300 hover:underline">github Profile</Link>
                             </div>
 
                             <div className="flex flex-row items-center gap-3">
-                                <img src="/public/typing.png" alt="typing" className="w-10 h-10" />
+                                <Image src={typing} alt="typing" className="w-10 h-10" />
                                 <Link href="https://monkeytype.com/profile/bilalHamza" target="_blank" className="text-lg text-neutral-300 hover:underline">Touch Typing</Link>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-5 ">
                             <div className="flex flex-row items-center gap-3">
-                                <img src="/public/address.png" alt="name" className="w-10 h-10" />
+                                <Image src={address} alt="address" className="w-10 h-10" />
                                 <Link href="https://maps.app.goo.gl/YBEBVpf2ASvNfynJ7" target="_blank" className="text-base text-neutral-300 hover:underline">Chinafort, Beruwala, Sri Lanka</Link>
                             </div>
 
                             <div className="flex flex-row items-center gap-3">
-                                <img src="/public/email.png" alt="phone" className="w-10 h-10" />
+                                <Image src={profEmail} alt="email" className="w-10 h-10" />
                                 <label className="text-base text-neutral-300">bilalhamzazuhry@gmail.com</label>
                             </div>
                         </div>
