@@ -2,7 +2,7 @@ import Link from "@/node_modules/next/link";
 
 export default function Home() {
     return (
-        <div className="bg-[url('./public/wall5.jpg')] bg-cover bg-center w-full">
+        <div className="bg-[url('/public/wall5.jpg')] bg-cover bg-center w-full">
             <div className="flex justify-center items-center flex-col">
                 <img src="/public/headshot.jpg" alt="headshot" className="sm:h-36 h-32 sm:w-36 w-32 rounded-full mt-8" />
 
