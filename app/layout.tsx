@@ -1,3 +1,9 @@
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Home from "@/components/Home";
+import Nav from "@/components/Nav";
+import Projects from "@/components/Projects";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,7 +22,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className="bg-black `{inter.className}` flex flex-col">
+        <Nav />
+        <Home />
+        <Projects />
+        <About />
+        <Contact />
+        {children}
+      </body>
     </html>
   );
 }
