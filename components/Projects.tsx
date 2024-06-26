@@ -10,7 +10,7 @@ export default function Projects() {
 
                 {/* Project Card 1 */}
                 <div className="bg-zinc-500 w-4/6 sm:h-44 h-64 sm:mt-5 mt-2 rounded-lg flex sm:flex-row flex-col">
-                    <div className="bg-[url('/public/wall5.jpg')] bg-cover bg-center w-full sm:w-2/5 sm:h-44 h-40 rounded-lg" />
+                    <div className="bg-[url('./wall5.jpg')] bg-cover bg-center w-full sm:w-2/5 sm:h-44 h-40 rounded-lg" />
 
                     <div className="sm:m-3 ml-2 mt-1 sm:w-8/12 w-11/12 ">
                         <Link href="https://project-promptopia-mhls0ak85-bilalhamza7s-projects.vercel.app" target="_blank" className="font-bold sm:text-xl text-lg font-serif underline">
