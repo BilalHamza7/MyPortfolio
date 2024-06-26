@@ -5,7 +5,7 @@ import wall5 from '../public/wall5.jpg';
 
 export default function Home() {
     return (
-        <div className="bg-[url('./wall5.jpg')] bg-cover bg-center w-full" style={{ backgroundImage: `url(${wall5.src})` }}>
+        <div className="bg-cover bg-center w-full" style={{ backgroundImage: `url(${wall5.src})` }}>
             <div className="flex justify-center items-center flex-col">
                 <Image src={headshot} alt="headshot" className="sm:h-36 h-32 sm:w-36 w-32 rounded-full mt-8" />
 
