@@ -9,7 +9,7 @@ export default function About() {
                 </p>
 
                 <div className="bg-zinc-950 px-2 sm:pt-0 py-3 sm:my-7 my-2 mx-7 sm:text-left text-center rounded-2xl bg-opacity-65 flex sm:flex-row flex-col items-center">
-                    <div className="bg-[url('./headshot.jpg')] bg-cover bg-center w-2/6 sm:w-full sm:h-80 h-40 rounded-lg" />
+                    <div className="bg-[url('/public/headshot.jpg')] bg-cover bg-center w-2/6 sm:w-full sm:h-80 h-40 rounded-lg" />
 
                     <div>
                         <p className="text-white font-lato text-xs sm:text-lg sm:mx-10 mt-5 tracking-wide">
