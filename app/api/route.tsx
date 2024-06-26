@@ -5,7 +5,13 @@ export const POST = async (req: any) => {
     const { name, email, message } = await req.json();
 
     try {
-        const transporter = nodemailer.createTransport();
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+              user: process.env.VERCEL_ENV_EMAIL_USER,
+              pass: process.env.VERCEL_ENV_EMAIL_PASS
+            }
+          });
 
         const mailOptions = {
             from: process.env.VERCEL_ENV_EMAIL_USER,
