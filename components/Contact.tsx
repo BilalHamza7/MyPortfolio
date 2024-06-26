@@ -62,7 +62,7 @@ export default function Contact() {
                         </button>
                     </form>
 
-                    <div className="bg-[url('./wall5.jpg')] bg-cover bg-center w-2/6 sm:w-full sm:h-80 h-40 rounded-lg mx-16 p-5 flex flex-row justify-between mt-3">
+                    <div className="bg-[url('/wall5.jpg')] bg-cover bg-center w-2/6 sm:w-full sm:h-80 h-40 rounded-lg mx-16 p-5 flex flex-row justify-between mt-3">
                         <div className="flex flex-col justify-between">
                             <div className="flex flex-row items-center gap-3">
                                 <img src="/name.png" alt="name" className="w-10 h-10" />
