@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "@/node_modules/next/dist/shared/lib/utils";
 import nodemailer from "nodemailer";
 
-export const POST = async (req) => {
+export const POST = async (req: any) => {
     const { name, email, message } = await req.json();
 
     try {
