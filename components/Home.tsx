@@ -1,10 +1,13 @@
+import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
+import headshot from '../public/headshot.jpg';
+import wall5 from '../public/wall5.jpg';
 
 export default function Home() {
     return (
-        <div className="bg-[url('./wall5.jpg')] bg-cover bg-center w-full">
+        <div className="bg-[url('./wall5.jpg')] bg-cover bg-center w-full" style={{ backgroundImage: `url(${wall5.src})` }}>
             <div className="flex justify-center items-center flex-col">
-                <img src="./headshot.jpg" alt="headshot" className="sm:h-36 h-32 sm:w-36 w-32 rounded-full mt-8" />
+                <Image src={headshot} alt="headshot" className="sm:h-36 h-32 sm:w-36 w-32 rounded-full mt-8" />
 
                 <p className="text-white font-mono text-3xl sm:text-5xl mt-5">I'm Bilal Hamza</p>
 
